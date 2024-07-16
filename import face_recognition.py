@@ -4,8 +4,8 @@ import numpy as np
 import playsound
 
 # Load images of the owner and other individuals
-owner_image = face_recognition.load_image_file(r"C:\Users\sai\AppData\Local\Programs\Python\Python37\project\sai.jpg.jpg")
-other_image = face_recognition.load_image_file(r"C:\Users\sai\AppData\Local\Programs\Python\Python37\project\saii.jpg.jpg")
+owner_image = face_recognition.load_image_file(r"C:\Users\NAVEEN KUMAR\Pictures")
+
 
 # Encode face features
 owner_encoding = face_recognition.face_encodings(owner_image)[0]
@@ -20,7 +20,7 @@ correct_password = "sai"
 def play_alarm_sound():
     global alarm_triggered
     #add the path where you have downloaded the alarm audio to
-    playsound.playsound(r'C:\Users\sai\Pictures\Camera Roll\emergency-alarm-with-reverb-29431.mp3',block=False)
+    playsound.playsound(r'C:\Users\NAVEEN KUMAR\Desktop',block=False)
     while alarm_triggered:
         print("Enter the password to stop the alarm: ")
         entered_password = input().strip()
