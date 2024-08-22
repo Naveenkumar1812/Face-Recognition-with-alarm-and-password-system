@@ -12,10 +12,10 @@ owner_encoding = face_recognition.face_encodings(owner_image)[0]
 other_encoding = face_recognition.face_encodings(other_image)[0]
 
 known_face_encodings = [owner_encoding]
-known_face_names = ["sai"]#relpace with your name
+known_face_names = ["naveen"]#relpace with your name
 
 alarm_triggered = True
-correct_password = "sai"
+correct_password = "naveen"
 
 def play_alarm_sound():
     global alarm_triggered
